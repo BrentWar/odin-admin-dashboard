@@ -5,10 +5,10 @@
 
 
 .main-container {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 150px 4fr;
 }
 
 .header {
@@ -31,7 +31,8 @@
 }
 
 .sidebar {
-    background-color: aqua;
+    color: white;
+    background-color: rgb(6, 149, 245);
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     z-index: 501; /*cover left shadow of header*/
@@ -61,7 +62,26 @@
 
 .projects {
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem 1fr;
+    gap: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    box-shadow: 3px 3px 5px rgb(150, 150, 150);
 }
 
 .announcements {
