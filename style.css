@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+path {
+    fill: currentColor;
+}
 
 .main-container {
     min-height: 100vh;
@@ -36,10 +39,10 @@
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     z-index: 501; /*cover left shadow of header*/
-    padding: 10px 30px;
+    padding: 10px 5px;
 
     display: grid;
-    grid-template-rows: 1.5rem 6rem 3rem;
+    grid-template-rows: 1.5rem 15rem 3rem;
     gap: 50px;
 
 }
@@ -47,6 +50,27 @@
 .sidebar ul {
     list-style-type: none;
 }
+
+.dashboard-image {
+    height: 2rem;
+    vertical-align: middle;
+    margin: 5px 5px;
+    filter: invert(100%) sepia(0%) saturate(5415%) hue-rotate(245deg) brightness(110%) contrast(104%);
+}
+
+.tab-image {
+    height: 1.5rem;
+    margin: 5px 20px 5px 5px;
+    filter: invert(100%) sepia(0%) saturate(5415%) hue-rotate(245deg) brightness(110%) contrast(104%);
+}
+
+.tabs li,
+.dashboard,
+.options li {
+    display: flex;
+    align-items: center;
+}
+
 
 .content {
     background-color: lightgray;
