@@ -166,7 +166,7 @@ path {
 
     display: grid;
     grid-template-columns: 7fr minmax(200px, 3fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -185,7 +185,7 @@ path {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .card {
@@ -194,6 +194,22 @@ path {
     border-radius: 10px;
     border-left: 10px solid orange;
     box-shadow: 3px 3px 5px rgb(150, 150, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.right-icons img {
+    height: 2rem;
+    padding: 5px;
+}
+
+.right-icons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
 }
 
 .announcements {
@@ -240,6 +256,7 @@ path {
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(150, 150, 150);
     padding: 30px;
+    margin: 10px 0px 0px;
 
     display: flex;
     flex-direction: column;
