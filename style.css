@@ -54,7 +54,7 @@ path {
     margin: 10px 0px 0px;
 }
 
-.icons .align {
+.align {
     display: flex;
     align-items: center;
 }
@@ -66,6 +66,7 @@ path {
     overflow: hidden;
     border-radius: 50%;
     margin: 0px 10px 0px 0px;
+    flex-shrink: 0;
 }
 
 .user {
@@ -101,6 +102,7 @@ path {
     overflow: hidden;
     border-radius: 50%;
     margin: 0px 10px 0px 0px;
+    flex-shrink: 0;
 }
 
 .dashboard {
@@ -114,7 +116,7 @@ path {
     color: white;
     width: 75px;
     padding: 10px 0px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 
@@ -229,6 +231,8 @@ path {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
+
+
 }
 
 .trending-background {
@@ -236,4 +240,17 @@ path {
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(150, 150, 150);
     padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray {
+    color: rgb(125, 125, 125);
+}
+
+.space {
+    margin: 20px 0px;
 }
